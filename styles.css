@@ -131,7 +131,7 @@ body::before {
 .section-layout {
   display: flex;
   align-items: stretch;
-  gap: var(--space-3);
+  gap: calc(var(--space-3) + 0.35rem);
 }
 
 .section-media {
@@ -163,6 +163,28 @@ body::before {
   color: var(--color-muted);
 }
 
+.under-construction-layout {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.under-construction-image {
+  width: min(560px, 100%);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-1);
+}
+
+.under-construction-text {
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
 .experience-intro {
   margin-bottom: var(--space-2);
 }
@@ -174,6 +196,28 @@ body::before {
 
 .talking-about-my-experience {
   margin: 0;
+}
+
+.office-leandro {
+  flex: 0 0 320px;
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: end;
+  gap: var(--space-1);
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.office-leandro-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow-1);
 }
 
 .carousel-of-logos {
@@ -293,11 +337,19 @@ body::before {
   }
 
   .section-layout {
-    gap: var(--space-2);
+    gap: calc(var(--space-2) + 0.25rem);
   }
 
   .section-media {
     flex-basis: 200px;
+  }
+
+  .office-leandro {
+    flex-basis: 260px;
+  }
+
+  .office-leandro-image {
+    height: 160px;
   }
 
   .experience-topic-layout {
@@ -346,6 +398,15 @@ body::before {
 
   .section-image {
     min-height: 140px;
+  }
+
+  .office-leandro {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .office-leandro-image {
+    height: 150px;
   }
 
   .experience-subtopic {
