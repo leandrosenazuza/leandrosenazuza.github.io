@@ -31,7 +31,7 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: url("assets/images/backgrounds/backgroud-page.png");
+  background-image: url("assets/images/backgroud-page.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ body::before {
   pointer-events: none;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/backgrounds/backgroud-page-5.png") center / cover no-repeat;
+    url("assets/images/background-test-5.png") center / cover no-repeat;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   transform: scale(0.18);
@@ -99,22 +99,17 @@ body::before {
 }
 
 .page-main {
-  max-width: 100%;
-  margin: 0;
-  padding: var(--nav-height) 0 0;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + var(--space-4)) var(--space-2) var(--space-5);
 }
 
 .content-section {
-  scroll-margin-top: var(--nav-height);
-  min-height: calc(100vh - var(--nav-height));
-  padding: var(--space-2);
-  display: flex;
-  align-items: stretch;
+  scroll-margin-top: calc(var(--nav-height) + var(--space-2));
+  margin-bottom: var(--space-3);
 }
 
 .section-card {
-  width: min(var(--content-width), 100%);
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.94);
   border-radius: var(--radius);
   box-shadow: var(--shadow-1);
@@ -122,8 +117,6 @@ body::before {
 }
 
 .section-title {
-  width: 100%;
-  text-align: center;
   margin: 0 0 var(--space-2);
   font-size: 1.5rem;
 }
@@ -148,12 +141,6 @@ body::before {
   box-shadow: var(--shadow-1);
 }
 
-.profile-photo {
-  object-fit: contain;
-  object-position: center;
-  background: rgba(255, 255, 255, 0.95);
-}
-
 .section-content {
   flex: 1;
 }
@@ -165,53 +152,6 @@ body::before {
 
 .experience-intro {
   margin-bottom: var(--space-2);
-}
-
-.about-my-experience {
-  display: grid;
-  gap: var(--space-2);
-}
-
-.talking-about-my-experience {
-  margin: 0;
-}
-
-.carousel-of-logos {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 10px;
-  padding: 0.4rem 0;
-}
-
-.carousel-track {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: max-content;
-  animation: logos-scroll 24s linear infinite;
-}
-
-.company-logo {
-  flex: 0 0 auto;
-  width: 88px;
-  height: 54px;
-  object-fit: contain;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.96);
-  padding: 0.35rem;
-  box-shadow: var(--shadow-1);
-}
-
-@keyframes logos-scroll {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 .experience-topics {
@@ -307,10 +247,6 @@ body::before {
   .experience-topic-image {
     height: 150px;
   }
-
-  .carousel-of-logos {
-    max-width: 560px;
-  }
 }
 
 @media (max-width: 700px) {
@@ -325,7 +261,7 @@ body::before {
   }
 
   .page-main {
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height) + var(--space-3));
   }
 
   .section-card {
@@ -354,10 +290,5 @@ body::before {
 
   .experience-subtopic-image {
     height: 120px;
-  }
-
-  .company-logo {
-    width: 74px;
-    height: 46px;
   }
 }
