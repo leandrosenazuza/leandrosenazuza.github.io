@@ -31,7 +31,7 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: url("assets/images/backgroud-page.png");
+  background-image: url("assets/images/backgrounds/backgroud-page.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ body::before {
   pointer-events: none;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/background-test-5.png") center / cover no-repeat;
+    url("assets/images/backgrounds/backgroud-page-5.png") center / cover no-repeat;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   transform: scale(0.18);
@@ -99,17 +99,22 @@ body::before {
 }
 
 .page-main {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: calc(var(--nav-height) + var(--space-4)) var(--space-2) var(--space-5);
+  max-width: 100%;
+  margin: 0;
+  padding: var(--nav-height) 0 0;
 }
 
 .content-section {
-  scroll-margin-top: calc(var(--nav-height) + var(--space-2));
-  margin-bottom: var(--space-3);
+  scroll-margin-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height));
+  padding: var(--space-2);
+  display: flex;
+  align-items: stretch;
 }
 
 .section-card {
+  width: min(var(--content-width), 100%);
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.94);
   border-radius: var(--radius);
   box-shadow: var(--shadow-1);
@@ -117,6 +122,8 @@ body::before {
 }
 
 .section-title {
+  width: 100%;
+  text-align: center;
   margin: 0 0 var(--space-2);
   font-size: 1.5rem;
 }
@@ -124,7 +131,7 @@ body::before {
 .section-layout {
   display: flex;
   align-items: stretch;
-  gap: var(--space-3);
+  gap: calc(var(--space-3) + 0.35rem);
 }
 
 .section-media {
@@ -141,6 +148,12 @@ body::before {
   box-shadow: var(--shadow-1);
 }
 
+.profile-photo {
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255, 255, 255, 0.95);
+}
+
 .section-content {
   flex: 1;
 }
@@ -150,8 +163,99 @@ body::before {
   color: var(--color-muted);
 }
 
+.under-construction-layout {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.under-construction-image {
+  width: min(560px, 100%);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-1);
+}
+
+.under-construction-text {
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
 .experience-intro {
   margin-bottom: var(--space-2);
+}
+
+.about-my-experience {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.talking-about-my-experience {
+  margin: 0;
+}
+
+.office-leandro {
+  flex: 0 0 320px;
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: end;
+  gap: var(--space-1);
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.office-leandro-image {
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow-1);
+}
+
+.carousel-of-logos {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0.4rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  animation: logos-scroll 24s linear infinite;
+}
+
+.company-logo {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem;
+  box-shadow: var(--shadow-1);
+}
+
+@keyframes logos-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .experience-topics {
@@ -233,11 +337,19 @@ body::before {
   }
 
   .section-layout {
-    gap: var(--space-2);
+    gap: calc(var(--space-2) + 0.25rem);
   }
 
   .section-media {
     flex-basis: 200px;
+  }
+
+  .office-leandro {
+    flex-basis: 260px;
+  }
+
+  .office-leandro-image {
+    height: 160px;
   }
 
   .experience-topic-layout {
@@ -246,6 +358,10 @@ body::before {
 
   .experience-topic-image {
     height: 150px;
+  }
+
+  .carousel-of-logos {
+    max-width: 560px;
   }
 }
 
@@ -261,7 +377,7 @@ body::before {
   }
 
   .page-main {
-    padding-top: calc(var(--nav-height) + var(--space-3));
+    padding-top: var(--nav-height);
   }
 
   .section-card {
@@ -284,11 +400,25 @@ body::before {
     min-height: 140px;
   }
 
+  .office-leandro {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .office-leandro-image {
+    height: 150px;
+  }
+
   .experience-subtopic {
     grid-template-columns: 1fr;
   }
 
   .experience-subtopic-image {
     height: 120px;
+  }
+
+  .company-logo {
+    width: 74px;
+    height: 46px;
   }
 }
