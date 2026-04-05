@@ -4,303 +4,202 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta id="meta-description" name="description"
-    content="Leandro's personal website with professional experience, projects, hobbies, contact, and thoughts about AI." />
-  <title>Software Engineer - Leandro Sena Zuza</title>
+  <meta name="description"
+    content="Leandro's personal website / Site pessoal do Leandro com experience / experiencia, projects / projetos, hobbies, contact / contato e AI / IA." />
+  <title>Software Engineer | Engenheiro de Software - Leandro Sena Zuza</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <nav class="site-nav" aria-label="Primary">
-        <a data-i18n="nav.who" href="#who-is-leandro">Who is Leandro?</a>
-        <a data-i18n="nav.experience" href="#professional-experience">Experience</a>
-        <a data-i18n="nav.projects" href="#personal-projects">My Personal Projects</a>
-        <a data-i18n="nav.hobbies" href="#hobbies">Hobbies</a>
-        <a data-i18n="nav.contact" href="#contact-me">Contact Me</a>
-        <a data-i18n="nav.ai" href="#ai-thoughts">AI?</a>
-      </nav>
-      <div class="language-toggle" role="group" aria-label="Language selector">
-        <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">ENG</button>
-        <button class="lang-btn" type="button" data-lang="pt" aria-pressed="false">PT</button>
-      </div>
-    </div>
-  </header>
+  <input class="lang-toggle-input" type="radio" name="language" id="lang-en" checked />
+  <input class="lang-toggle-input" type="radio" name="language" id="lang-pt" />
 
-  <main class="page-main">
-    <section id="who-is-leandro" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="who.title">Who is Leandro?</h2>
-        <div class="section-layout">
-          <figure class="section-media" aria-label="Leandro portrait placeholder">
-            <img class="section-image" src="assets/images/personal/who-is-leandro.png" alt="Leandro profile photo" />
-          </figure>
-          <div class="section-content">
-            <ul>
-              <li data-i18n="who.li1">
-                I am a technology professional passionate about building practical, reliable digital products that solve
-                real-world problems across backend systems, APIs, machine learning, and user-facing experiences.
-              </li>
-              <li data-i18n="who.li2">
-                I have worked with technologies such as .NET, Java with Spring Boot, and Python, with a special
-                interest in automation and computer vision to turn ideas into end-to-end solutions people can use every
-                day.
-              </li>
-              <li data-i18n="who.li3">
-                I hold degrees in Information Technology and Food Engineering, earned a Master’s degree in Electrical
-                Engineering focused on Computer Graphics, and I am currently completing a degree in Computer
-                Engineering.
-              </li>
-              <li data-i18n="who.li4">
-                I care deeply about clean, maintainable code and simplicity, because good software should be easy to
-                understand, scale, and improve over time while staying centered on real people.
-              </li>
-            </ul>
-          </div>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#who-is-leandro"><span class="lang-en">Who is Leandro?</span><span class="lang-pt">Quem e Leandro?</span></a>
+          <a href="#professional-experience"><span class="lang-en">Experience</span><span class="lang-pt">Experiencia</span></a>
+          <a href="#personal-projects"><span class="lang-en">My Personal Projects</span><span class="lang-pt">Meus Projetos Pessoais</span></a>
+          <a href="#hobbies"><span class="lang-en">Hobbies</span><span class="lang-pt">Hobbies</span></a>
+          <a href="#contact-me"><span class="lang-en">Contact Me</span><span class="lang-pt">Contato</span></a>
+          <a href="#ai-thoughts"><span class="lang-en">AI?</span><span class="lang-pt">IA?</span></a>
+        </nav>
+        <div class="language-toggle" role="group" aria-label="Language selector">
+          <label class="lang-link" for="lang-en">ENG</label>
+          <label class="lang-link" for="lang-pt">PT</label>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section id="professional-experience" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="experience.title">My Professional Experience</h2>
-        <div class="section-layout">
-          <figure class="section-media" aria-label="Professional experience placeholder">
-            <img class="section-image" src="assets/images/personal/pachola.png"
-              alt="Leandro with notebook in professional setting" />
-          </figure>
-          <div class="section-content">
-            <p class="experience-intro" data-i18n="experience.intro">
-              As you know from my previous section, my name is Leandro, I'm a engineer with a strong background in software development, automation, and machine learning.
-            </p>
-            <div class="about-my-experience">
-              <div class="talking-about-my-experience">
-                <p data-i18n="experience.body">
-                I've worked at companies of various sizes, from startups to large enterprises, Brazilians and Americans Companies, in roles focused on software
-                development, automation, and machine learning. My experience includes building backend systems, APIs,
-                and user-facing applications, with a strong emphasis on clean code, maintainability, and delivering
-                real value to users. I have a track record of successfully leading projects, collaborating across teams,
-                and continuously learning new technologies to solve complex problems effectively.            
+    <main class="page-main">
+      <section id="who-is-leandro" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">Who is Leandro?</span><span class="lang-pt">Quem e Leandro?</span></h2>
+          <div class="section-layout">
+            <figure class="section-media" aria-label="Leandro portrait">
+              <img class="section-image" src="assets/images/personal/who-is-leandro.png"
+                alt="Leandro profile photo / Foto de perfil do Leandro" />
+            </figure>
+            <div class="section-content">
+              <ul>
+                <li>
+                  <span class="lang-en">I am a technology professional passionate about building practical, reliable digital products that solve real-world problems across backend systems, APIs, machine learning, and user-facing experiences.</span>
+                  <span class="lang-pt">Sou um profissional de tecnologia apaixonado por criar produtos digitais praticos e confiaveis que resolvem problemas reais em sistemas backend, APIs, machine learning e experiencias para usuarios.</span>
+                </li>
+                <li>
+                  <span class="lang-en">I have worked with technologies such as .NET, Java with Spring Boot, and Python, with a special interest in automation and computer vision to turn ideas into end-to-end solutions people can use every day.</span>
+                  <span class="lang-pt">Ja trabalhei com tecnologias como .NET, Java com Spring Boot e Python, com interesse especial em automacao e visao computacional para transformar ideias em solucoes completas que as pessoas usam no dia a dia.</span>
+                </li>
+                <li>
+                  <span class="lang-en">I hold degrees in Information Technology and Food Engineering, earned a Master degree in Electrical Engineering focused on Computer Graphics, and I am currently completing a degree in Computer Engineering.</span>
+                  <span class="lang-pt">Tenho formacao em Tecnologia da Informacao e Engenharia de Alimentos, conclui um mestrado em Engenharia Eletrica com foco em Computacao Grafica e atualmente estou concluindo a graduacao em Engenharia da Computacao.</span>
+                </li>
+                <li>
+                  <span class="lang-en">I care deeply about clean, maintainable code and simplicity, because good software should be easy to understand, scale, and improve over time while staying centered on real people.</span>
+                  <span class="lang-pt">Valorizo muito codigo limpo, manutenivel e simples, porque um bom software precisa ser facil de entender, escalar e evoluir ao longo do tempo sem perder o foco nas pessoas.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="professional-experience" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">My Professional Experience</span><span class="lang-pt">Minha Experiencia Profissional</span></h2>
+          <div class="section-layout">
+            <figure class="section-media" aria-label="Professional experience">
+              <img class="section-image" src="assets/images/personal/pachola.png"
+                alt="Leandro with notebook in professional setting / Leandro com notebook em ambiente profissional" />
+            </figure>
+            <div class="section-content">
+              <p class="experience-intro">
+                <span class="lang-en">As you know from my previous section, my name is Leandro, I am an engineer with a strong background in software development, automation, and machine learning.</span>
+                <span class="lang-pt">Como voce viu na secao anterior, meu nome e Leandro e sou engenheiro com base forte em desenvolvimento de software, automacao e machine learning.</span>
               </p>
-              </div>
-              <div class="carousel-of-logos">
-                <div class="carousel-track">
-                  <img class="company-logo" src="assets/images/companies/BTG.jpg" alt="BTG company logo" />
-                  <img class="company-logo" src="assets/images/companies/Cedro.jpeg" alt="Cedro company logo" />
-                  <img class="company-logo" src="assets/images/companies/PagBank.png" alt="PagBank company logo" />
-                  <img class="company-logo" src="assets/images/companies/SESP.jpeg" alt="SESP company logo" />
-                  <img class="company-logo" src="assets/images/companies/TQI.png" alt="TQI company logo" />
-                  <img class="company-logo" src="assets/images/companies/agrosolutions.png" alt="Agro Solutions company logo" />
-                  <img class="company-logo" src="assets/images/companies/lamp-it.jpeg" alt="Lamp IT company logo" />
-                  <img class="company-logo" src="assets/images/companies/msi.jpeg" alt="MSI company logo" />
-                  <img class="company-logo" src="assets/images/companies/noom.png" alt="Noom company logo" />
-                  <img class="company-logo" src="assets/images/companies/pynne.jpeg" alt="Pynne company logo" />
-                  <img class="company-logo" src="assets/images/companies/valecard.jpg" alt="Valecard company logo" />
-                  <img class="company-logo" src="assets/images/companies/BTG.jpg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/Cedro.jpeg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/PagBank.png" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/SESP.jpeg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/TQI.png" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/agrosolutions.png" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/lamp-it.jpeg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/msi.jpeg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/noom.png" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/pynne.jpeg" alt="" aria-hidden="true" />
-                  <img class="company-logo" src="assets/images/companies/valecard.jpg" alt="" aria-hidden="true" />
+              <div class="about-my-experience">
+                <div class="talking-about-my-experience">
+                  <p>
+                    <span class="lang-en">I have worked at companies of various sizes, from startups to large enterprises, in roles focused on software development, automation, and machine learning. My experience includes building backend systems, APIs, and user-facing applications, with a strong emphasis on clean code, maintainability, and delivering real value to users. I have a track record of successfully leading projects, collaborating across teams, and continuously learning new technologies to solve complex problems effectively.</span>
+                    <span class="lang-pt">Ja trabalhei em empresas de varios portes, de startups a grandes empresas, no Brasil e nos Estados Unidos, em funcoes focadas em desenvolvimento de software, automacao e machine learning. Minha experiencia inclui construir sistemas backend, APIs e aplicacoes voltadas ao usuario, com foco em codigo limpo, manutenibilidade e entrega de valor real. Tenho historico de liderar projetos com sucesso, colaborar entre times e aprender continuamente novas tecnologias para resolver problemas complexos com eficiencia.</span>
+                  </p>
+                </div>
+                <div class="carousel-of-logos">
+                  <div class="carousel-track">
+                    <img class="company-logo" src="assets/images/companies/BTG.jpg" alt="BTG company logo" />
+                    <img class="company-logo" src="assets/images/companies/Cedro.jpeg" alt="Cedro company logo" />
+                    <img class="company-logo" src="assets/images/companies/PagBank.png" alt="PagBank company logo" />
+                    <img class="company-logo" src="assets/images/companies/SESP.jpeg" alt="SESP company logo" />
+                    <img class="company-logo" src="assets/images/companies/TQI.png" alt="TQI company logo" />
+                    <img class="company-logo" src="assets/images/companies/agrosolutions.png" alt="Agro Solutions company logo" />
+                    <img class="company-logo" src="assets/images/companies/lamp-it.jpeg" alt="Lamp IT company logo" />
+                    <img class="company-logo" src="assets/images/companies/msi.jpeg" alt="MSI company logo" />
+                    <img class="company-logo" src="assets/images/companies/noom.png" alt="Noom company logo" />
+                    <img class="company-logo" src="assets/images/companies/pynne.jpeg" alt="Pynne company logo" />
+                    <img class="company-logo" src="assets/images/companies/valecard.jpg" alt="Valecard company logo" />
+                    <img class="company-logo" src="assets/images/companies/BTG.jpg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/Cedro.jpeg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/PagBank.png" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/SESP.jpeg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/TQI.png" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/agrosolutions.png" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/lamp-it.jpeg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/msi.jpeg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/noom.png" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/pynne.jpeg" alt="" aria-hidden="true" />
+                    <img class="company-logo" src="assets/images/companies/valecard.jpg" alt="" aria-hidden="true" />
+                  </div>
                 </div>
               </div>
+              <div class="experience-ending">
+                <p>
+                  <span class="lang-en">I am always looking for new opportunities to grow and contribute, and I am excited to connect with others who share my passion for technology and innovation.</span>
+                  <span class="lang-pt">Estou sempre em busca de novas oportunidades para crescer e contribuir, e fico animado em me conectar com pessoas que compartilham a mesma paixao por tecnologia e inovacao.</span>
+                </p>
+              </div>
+              <div class="office-leandro">
+                <p><span class="lang-en">Some images of my office</span><span class="lang-pt">Algumas imagens do meu escritorio</span></p>
+                <p><span class="lang-en">I love to work from home!</span><span class="lang-pt">Eu adoro trabalhar de casa!</span></p>
+                <img class="office-leandro-image" src="assets/images/personal/pc-cuia.jpg"
+                  alt="Leandro working in his office / Leandro trabalhando no escritorio" />
+                <img class="office-leandro-image" src="assets/images/personal/office-uberlandia.jpg"
+                  alt="Leandro working in his office / Leandro trabalhando no escritorio" />
+              </div>
             </div>
-            <div class="experience-ending">
-              <p data-i18n="experience.end">
-                I am always looking for new opportunities to grow and contribute, and I am excited to connect with
-                others who share my passion for technology and innovation.
+          </div>
+        </div>
+      </section>
+
+      <section id="personal-projects" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">My Personal Projects</span><span class="lang-pt">Meus Projetos Pessoais</span></h2>
+          <div class="under-construction-layout">
+            <img class="under-construction-image" src="assets/images/personal/under-construction.png"
+              alt="Under construction sign with helmets and cones / Secao em construcao" />
+            <p class="under-construction-text">
+              <span class="lang-en">Section under construction. New personal projects coming soon.</span>
+              <span class="lang-pt">Secao em construcao. Novos projetos pessoais em breve.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">Hobbies</span><span class="lang-pt">Hobbies</span></h2>
+          <div class="under-construction-layout">
+            <img class="under-construction-image" src="assets/images/personal/under-construction.png"
+              alt="Under construction sign with helmets and cones / Secao em construcao" />
+            <p class="under-construction-text">
+              <span class="lang-en">Section under construction. New hobbies content coming soon.</span>
+              <span class="lang-pt">Secao em construcao. Novos conteudos sobre hobbies em breve.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-me" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">Contact Me</span><span class="lang-pt">Contato</span></h2>
+          <div class="section-layout">
+            <figure class="section-media" aria-label="Contact section">
+              <img class="section-image" src="assets/images/companies/Cedro.jpeg"
+                alt="Contact section image / Imagem da secao de contato" />
+            </figure>
+            <div class="section-content">
+              <p>
+                <span class="lang-en">Feel free to reach out to discuss opportunities, collaborations, or ideas related to software, product development, and innovation.</span>
+                <span class="lang-pt">Fique a vontade para conversar sobre oportunidades, colaboracoes ou ideias relacionadas a software, desenvolvimento de produto e inovacao.</span>
               </p>
             </div>
-            <div class="office-leandro">
-              <p data-i18n="experience.office.title">Some images of my office</p>
-              <p data-i18n="experience.office.subtitle">I love to work from home!</p>
-              <img class="office-leandro-image" src="assets/images/personal/pc-cuia.jpg" alt="Leandro working in his office" />
-              <img class="office-leandro-image" src="assets/images/personal/office-uberlandia.jpg" alt="Leandro working in his office" />
-          </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="personal-projects" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="projects.title">My Personal Projects</h2>
-        <div class="under-construction-layout">
-          <img class="under-construction-image" src="assets/images/personal/under-construction.png"
-            alt="Under construction sign with helmets and cones" />
-          <p class="under-construction-text" data-i18n="projects.underConstruction">
-            Section under construction. New personal projects coming soon.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="hobbies" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="hobbies.title">Hobbies</h2>
-        <div class="under-construction-layout">
-          <img class="under-construction-image" src="assets/images/personal/under-construction.png"
-            alt="Under construction sign with helmets and cones" />
-          <p class="under-construction-text" data-i18n="hobbies.underConstruction">
-            Section under construction. New hobbies content coming soon.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact-me" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
-        <div class="section-layout">
-          <figure class="section-media" aria-label="Contact placeholder">
-            <img class="section-image" src="assets/images/companies/Cedro.jpeg" alt="Contact section image placeholder" />
-          </figure>
-          <div class="section-content">
-            <p data-i18n="contact.text">
-              Feel free to reach out to discuss opportunities, collaborations, or
-              ideas related to software, product development, and innovation.
-            </p>
+      <section id="ai-thoughts" class="content-section">
+        <div class="section-card">
+          <h2 class="section-title"><span class="lang-en">What do I think about AI?</span><span class="lang-pt">O que eu penso sobre IA?</span></h2>
+          <div class="section-layout">
+            <figure class="section-media" aria-label="Artificial intelligence section">
+              <img class="section-image" src="assets/images/backgrounds/backgroud-page-5.png"
+                alt="AI thoughts section image / Imagem da secao sobre IA" />
+            </figure>
+            <div class="section-content">
+              <p>
+                <span class="lang-en">I see AI as a powerful accelerator for learning and productivity when used responsibly, with strong attention to ethics, transparency, and real user value.</span>
+                <span class="lang-pt">Vejo a IA como um acelerador poderoso de aprendizado e produtividade quando usada com responsabilidade, com forte atencao a etica, transparencia e valor real para o usuario.</span>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="ai-thoughts" class="content-section">
-      <div class="section-card">
-        <h2 class="section-title" data-i18n="ai.title">What do I think about AI?</h2>
-        <div class="section-layout">
-          <figure class="section-media" aria-label="Artificial intelligence placeholder">
-            <img class="section-image" src="assets/images/backgrounds/backgroud-page-5.png"
-              alt="AI thoughts section image placeholder" />
-          </figure>
-          <div class="section-content">
-            <p data-i18n="ai.text">
-              I see AI as a powerful accelerator for learning and productivity when
-              used responsibly, with strong attention to ethics, transparency, and
-              real user value.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p data-i18n="footer.built">Built with pure HTML and CSS.</p>
-  </footer>
-  <script>
-    const translations = {
-      en: {
-        htmlLang: "en",
-        pageTitle: "Software Engineer - Leandro Sena Zuza",
-        metaDescription: "Leandro's personal website with professional experience, projects, hobbies, contact, and thoughts about AI.",
-        "nav.who": "Who is Leandro?",
-        "nav.experience": "Experience",
-        "nav.projects": "My Personal Projects",
-        "nav.hobbies": "Hobbies",
-        "nav.contact": "Contact Me",
-        "nav.ai": "AI?",
-        "who.title": "Who is Leandro?",
-        "who.li1": "I am a technology professional passionate about building practical, reliable digital products that solve real-world problems across backend systems, APIs, machine learning, and user-facing experiences.",
-        "who.li2": "I have worked with technologies such as .NET, Java with Spring Boot, and Python, with a special interest in automation and computer vision to turn ideas into end-to-end solutions people can use every day.",
-        "who.li3": "I hold degrees in Information Technology and Food Engineering, earned a Master’s degree in Electrical Engineering focused on Computer Graphics, and I am currently completing a degree in Computer Engineering.",
-        "who.li4": "I care deeply about clean, maintainable code and simplicity, because good software should be easy to understand, scale, and improve over time while staying centered on real people.",
-        "experience.title": "My Professional Experience",
-        "experience.intro": "As you know from my previous section, my name is Leandro, I'm an engineer with a strong background in software development, automation, and machine learning.",
-        "experience.body": "I've worked at companies of various sizes, from startups to large enterprises, in Brazil and in the United States, in roles focused on software development, automation, and machine learning. My experience includes building backend systems, APIs, and user-facing applications, with a strong emphasis on clean code, maintainability, and delivering real value to users. I have a track record of leading projects successfully, collaborating across teams, and continuously learning new technologies to solve complex problems effectively.",
-        "experience.end": "I am always looking for new opportunities to grow and contribute, and I am excited to connect with others who share my passion for technology and innovation.",
-        "experience.office.title": "Some images of my office",
-        "experience.office.subtitle": "I love to work from home!",
-        "projects.title": "My Personal Projects",
-        "projects.underConstruction": "Section under construction. New personal projects coming soon.",
-        "hobbies.title": "Hobbies",
-        "hobbies.underConstruction": "Section under construction. New hobbies content coming soon.",
-        "contact.title": "Contact Me",
-        "contact.text": "Feel free to reach out to discuss opportunities, collaborations, or ideas related to software, product development, and innovation.",
-        "ai.title": "What do I think about AI?",
-        "ai.text": "I see AI as a powerful accelerator for learning and productivity when used responsibly, with strong attention to ethics, transparency, and real user value.",
-        "footer.built": "Built with pure HTML and CSS."
-      },
-      pt: {
-        htmlLang: "pt-BR",
-        pageTitle: "Engenheiro de Software - Leandro Sena Zuza",
-        metaDescription: "Site pessoal do Leandro com experiencia profissional, projetos, hobbies, contato e opinioes sobre IA.",
-        "nav.who": "Quem e Leandro?",
-        "nav.experience": "Experiencia",
-        "nav.projects": "Meus Projetos Pessoais",
-        "nav.hobbies": "Hobbies",
-        "nav.contact": "Contato",
-        "nav.ai": "IA?",
-        "who.title": "Quem e Leandro?",
-        "who.li1": "Sou um profissional de tecnologia apaixonado por criar produtos digitais praticos e confiaveis que resolvem problemas reais em sistemas backend, APIs, machine learning e experiencias para usuarios.",
-        "who.li2": "Ja trabalhei com tecnologias como .NET, Java com Spring Boot e Python, com interesse especial em automacao e visao computacional para transformar ideias em solucoes completas que as pessoas usam no dia a dia.",
-        "who.li3": "Tenho formacao em Tecnologia da Informacao e Engenharia de Alimentos, conclui um mestrado em Engenharia Eletrica com foco em Computacao Grafica e atualmente estou concluindo a graduacao em Engenharia da Computacao.",
-        "who.li4": "Valorizo muito codigo limpo, manutenivel e simples, porque um bom software precisa ser facil de entender, escalar e evoluir ao longo do tempo sem perder o foco nas pessoas.",
-        "experience.title": "Minha Experiencia Profissional",
-        "experience.intro": "Como voce viu na secao anterior, meu nome e Leandro e sou engenheiro com base forte em desenvolvimento de software, automacao e machine learning.",
-        "experience.body": "Ja trabalhei em empresas de varios portes, de startups a grandes empresas, no Brasil e nos Estados Unidos, em funcoes focadas em desenvolvimento de software, automacao e machine learning. Minha experiencia inclui construir sistemas backend, APIs e aplicacoes voltadas ao usuario, com foco em codigo limpo, manutenibilidade e entrega de valor real. Tenho historico de liderar projetos com sucesso, colaborar entre times e aprender continuamente novas tecnologias para resolver problemas complexos com eficiencia.",
-        "experience.end": "Estou sempre em busca de novas oportunidades para crescer e contribuir, e fico animado em me conectar com pessoas que compartilham a mesma paixao por tecnologia e inovacao.",
-        "experience.office.title": "Algumas imagens do meu escritorio",
-        "experience.office.subtitle": "Eu adoro trabalhar de casa!",
-        "projects.title": "Meus Projetos Pessoais",
-        "projects.underConstruction": "Secao em construcao. Novos projetos pessoais em breve.",
-        "hobbies.title": "Hobbies",
-        "hobbies.underConstruction": "Secao em construcao. Novos conteudos sobre hobbies em breve.",
-        "contact.title": "Contato",
-        "contact.text": "Fique a vontade para conversar sobre oportunidades, colaboracoes ou ideias relacionadas a software, desenvolvimento de produto e inovacao.",
-        "ai.title": "O que eu penso sobre IA?",
-        "ai.text": "Vejo a IA como um acelerador poderoso de aprendizado e produtividade quando usada com responsabilidade, com forte atencao a etica, transparencia e valor real para o usuario.",
-        "footer.built": "Feito com HTML e CSS puros."
-      }
-    };
-
-    const languageButtons = document.querySelectorAll(".lang-btn");
-    const translatableElements = document.querySelectorAll("[data-i18n]");
-
-    const applyLanguage = (lang) => {
-      const dictionary = translations[lang] ?? translations.en;
-
-      translatableElements.forEach((element) => {
-        const key = element.dataset.i18n;
-        const translatedText = dictionary[key];
-
-        if (translatedText) {
-          element.textContent = translatedText;
-        }
-      });
-
-      document.documentElement.lang = dictionary.htmlLang;
-      document.title = dictionary.pageTitle;
-
-      const metaDescriptionElement = document.getElementById("meta-description");
-      if (metaDescriptionElement) {
-        metaDescriptionElement.setAttribute("content", dictionary.metaDescription);
-      }
-
-      languageButtons.forEach((button) => {
-        const isSelected = button.dataset.lang === lang;
-        button.classList.toggle("is-active", isSelected);
-        button.setAttribute("aria-pressed", String(isSelected));
-      });
-
-      localStorage.setItem("preferredLanguage", lang);
-    };
-
-    languageButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        applyLanguage(button.dataset.lang ?? "en");
-      });
-    });
-
-    const preferredLanguage = localStorage.getItem("preferredLanguage");
-    applyLanguage(preferredLanguage === "pt" ? "pt" : "en");
-  </script>
+    <footer class="site-footer">
+      <p><span class="lang-en">Built with pure HTML and CSS.</span><span class="lang-pt">Feito com HTML e CSS puros.</span></p>
+    </footer>
+  </div>
 </body>
 
 </html>
